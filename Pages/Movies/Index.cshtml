@@ -1,4 +1,4 @@
-@page
+@page "{searchString?}"
 @model RazorPagesMovie.Pages_Movies.IndexModel
 
 @{
@@ -49,6 +49,11 @@
                 <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
+        <td>
+  <a href="/Movies/Edit/1">Edit</a> |
+  <a href="/Movies/Details/1">Details</a> |
+  <a href="/Movies/Delete/1">Delete</a>
+</td>
 }
     </tbody>
 </table>

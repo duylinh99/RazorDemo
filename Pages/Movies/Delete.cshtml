@@ -1,4 +1,4 @@
-@page
+@page "{id:int?}"
 @model RazorPagesMovie.Pages_Movies.DeleteModel
 
 @{
@@ -44,3 +44,8 @@
         <a asp-page="./Index">Back to List</a>
     </form>
 </div>
+<td>
+  <a href="/Movies/Edit/1">Edit</a> |
+  <a href="/Movies/Details/1">Details</a> |
+  <a href="/Movies/Delete/1">Delete</a>
+</td>
